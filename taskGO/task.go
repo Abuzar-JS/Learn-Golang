@@ -42,14 +42,31 @@ func Jsons() {
 		},
 	}
 
-	fmt.Println("Employee ID: ", p1.e_id)
-	fmt.Println("Employee Name ", p1.name)
-	fmt.Println("Employee Department: ", p1.departments)
-	fmt.Println("Employee Skills: ", p1.skills)
+
+func Person1(){
+	fmt.Println("ID: ", p1.e_id)
+	fmt.Println("Name ", p1.name)
+	fmt.Println("Department: ", p1.departments)
 	for _, v := range p1.skills {
-		fmt.Printf("Employee Skill : %v \n", v)
+		fmt.Printf("Skill : %v \n", v)
 	}
 
+	for _, v := range p1.projects {
+		fmt.Println("---------")
+		fmt.Println("Project name: ", v.name_p)
+		fmt.Println("Project Duration: ", v.duration)
+		for _, v2 := range v.team {
+			fmt.Println("---------")
+			fmt.Println("Team ID: ", v2.t_id)
+			fmt.Println("Team Role: ", v2.role)
+
+		}
+	}}
+
+	var option int
+
+	fmt.Scanln(&option)
+	fmt.Println(" Chose your Option")
 	// fmt.Println(p1.projects)
 
 	// for _, r:= range Team.t_id {
