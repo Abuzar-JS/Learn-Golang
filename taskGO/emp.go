@@ -27,7 +27,7 @@ func PEmp() {
 		}, {
 			name_p:   "Project Y",
 			duration: 9,
-			
+
 			team: []Team{{
 				t_id: 4,
 				role: "Senior Developer",
@@ -41,5 +41,6 @@ func PEmp() {
 
 	for _, v := range p9.projects {
 		fmt.Println(v)
-		
+
 	}
+}
