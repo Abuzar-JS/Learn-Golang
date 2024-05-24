@@ -1,0 +1,66 @@
+{
+    "company": "Tech Solutions Inc.",
+    "employees": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "department": "Engineering",
+        "skills": ["Python", "JavaScript", "Machine Learning"],
+        "projects": [
+          {
+            "name": "Project X",
+            "duration": 6,
+            "team": [
+              {"id": 1, "role": "Lead Developer"},
+              {"id": 2, "role": "Data Scientist"},
+              {"id": 3, "role": "UX Designer"}
+            ]
+          },
+          {
+            "name": "Project Y",
+            "duration": 9,
+            "team": [
+              {"id": 1, "role": "Senior Developer"},
+              {"id": 4, "role": "Database Administrator"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "department": "Marketing",
+        "skills": ["Digital Marketing", "Content Creation", "SEO"],
+        "projects": [
+          {
+            "name": "Campaign A",
+            "duration": 4,
+            "team": [
+              {"id": 5, "role": "Marketing Manager"},
+              {"id": 6, "role": "Content Writer"}
+            ]
+          }
+        ]
+      }
+    ],
+    "clients": [
+      {
+        "id": 1,
+        "name": "ABC Corporation",
+        "industry": "Finance",
+        "contacts": [
+          {"name": "Alice Johnson", "role": "CTO"},
+          {"name": "Bob Williams", "role": "CFO"}
+        ]
+      },
+      {
+        "id": 2,
+        "name": "XYZ Enterprises",
+        "industry": "Retail",
+        "contacts": [
+          {"name": "Emily Davis", "role": "Marketing Director"},
+          {"name": "Jack Brown", "role": "CEO"}
+        ]
+      }
+    ]
+  }

@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-func Examp() {
+func FunctionX() {
+
+	fmt.Println("Welcome To Tech Solutions Inc")
 
 	var option int
 
