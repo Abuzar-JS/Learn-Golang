@@ -35,7 +35,8 @@ func Jsons() {
 				role: "Database Admin",
 			}},
 		},
-		}}
+		},
+	}
 
 	p2 := Employees{
 		e_id:        2,
