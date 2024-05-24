@@ -56,11 +56,11 @@ func Jsons() {
 		},
 	}
 
-	c1 := clients{
+	c1 := Clients{
 		c_id:     1,
 		name:     "ABC Corporation",
 		industry: "Finance",
-		contact: []contact{{
+		contact: []Contact{{
 			c_name: "Alice Johnson",
 			c_role: "CTO",
 		}, {
@@ -70,11 +70,11 @@ func Jsons() {
 		},
 	}
 
-	c2 := clients{
+	c2 := Clients{
 		c_id:     2,
 		name:     "XYZ Enterprises",
 		industry: "Retail",
-		contact: []contact{{
+		contact: []Contact{{
 			c_name: "Emily Davis",
 			c_role: "Marketing Director",
 		}, {

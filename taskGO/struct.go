@@ -19,14 +19,14 @@ type Team struct {
 	role string
 }
 
-type clients struct {
+type Clients struct {
 	c_id     int
 	name     string
 	industry string
-	contact  []contact
+	contact  []Contact
 }
 
-type contact struct {
+type Contact struct {
 	c_name string
 	c_role string
 }
