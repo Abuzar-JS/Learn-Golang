@@ -1,5 +1,13 @@
 package main
 
 func main() {
-	Sum(1, 2, 3, 4, 5)
+	p1 := Person{
+		first: "James",
+	}
+	p2 := Person{
+		first: "Jenny",
+	}
+
+	p1.speak()
+	p2.speak()
 }
