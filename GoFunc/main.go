@@ -1,12 +1,6 @@
 package main
 
-import "fmt"
-
 func main() {
+	Incre()
 
-	CallBack()
-
-	fmt.Printf("%T \n", DoMath)
-	fmt.Printf("%T\n", Subtraction)
-	fmt.Printf("%T\n", add)
 }
