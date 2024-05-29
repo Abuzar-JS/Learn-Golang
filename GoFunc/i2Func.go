@@ -5,7 +5,7 @@ import (
 )
 
 // Func with no parameter no return
-func Foo() {
+func Foos() {
 	fmt.Println("I'm Abuzar")
 }
 
