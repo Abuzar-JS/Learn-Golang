@@ -29,6 +29,7 @@ type shape interface {
 func info(s shape) float64 {
 	return s.area()
 }
+
 func E62() {
 	c1 := circle{
 		radius: 4,
@@ -38,7 +39,7 @@ func E62() {
 		length: 5,
 		width:  8,
 	}
-
+	// Result
 	fmt.Println(info(c1))
 	fmt.Println(info(s1))
 }
