@@ -1,6 +1,8 @@
 package main
 
-func main() {
-	Incre()
+import "fmt"
 
+func main() {
+	FacMain()
+	fmt.Println(FactLopp(10))
 }
