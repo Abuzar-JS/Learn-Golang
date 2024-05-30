@@ -15,6 +15,11 @@ func (d *dog) run() {
 	fmt.Println("My name is ", d.first, "and I'm running")
 }
 
+type youngin interface {
+	walk()
+	run()
+}
+
 func MethodsPoint() {
 	d1 := dog{"Henry"}
 	d1.walk()
