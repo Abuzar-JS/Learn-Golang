@@ -37,17 +37,22 @@ package main
 
 import "fmt"
 
-// CostCalculator calculates the cost per person of a meal
+
 func CostCalculator(mealCost float64, taxRate float64, tipRate float64, numPeople int) float64 {
 	taxAmount := mealCost * (taxRate / 100)
+
 	tipAmount := mealCost * (tipRate / 100)
+	
 	totalCost := mealCost + taxAmount + tipAmount
+	
 	costPerPerson := totalCost / float64(numPeople)
+	
 	return costPerPerson
 }
 
-// CostExe executes the cost calculation by taking user input
+
 func CostExe() {
+
 	var mealCost, tipRate, taxRate float64
 	var numPeople int
 

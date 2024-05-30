@@ -73,7 +73,7 @@ func Unmarshal() {
 						fmt.Println("---Client Contact---")
 						fmt.Printf("Name: %v \nRole: %v \n", v.Contacts_name, v.Contacts_role)
 					}
-				}
+				 }
 			}
 		}
 
