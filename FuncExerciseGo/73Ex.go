@@ -11,7 +11,7 @@ func E73() {
 }
 
 func DoWork() {
-	for i := 0; i < 2_000; i++ {
+	for i := 0; i < 3_000; i++ {
 		fmt.Println(i)
 	}
 }
