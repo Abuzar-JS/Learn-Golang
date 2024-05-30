@@ -62,7 +62,7 @@ func (s Service) SaveUser(u User) error {
 	return s.ds.SaveUser(u)
 }
 
-func mainX() {
+func MainX() {
 	db := MockDatastore{
 		Users: make(map[int]User),
 	}
