@@ -20,6 +20,10 @@ type youngin interface {
 	run()
 }
 
+func youngRun(y youngin) {
+	y.run()
+}
+
 func MethodsPoint() {
 	d1 := dog{"Henry"}
 	d1.walk()
@@ -28,4 +32,5 @@ func MethodsPoint() {
 	d2 := &dog{"Padget"}
 	d2.walk()
 	d2.run()
+	youngRun(d2)
 }
