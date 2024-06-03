@@ -50,7 +50,7 @@ func Unmarshal() {
 						fmt.Println("---------")
 						fmt.Printf("Project Name: %v Project Duration %v \n", v3.P_name, v3.P_duration)
 						if len(v3.P_team) >= 1 {
-							fmt.Println("---------")
+							fmt.Println("----------")
 							for _, v4 := range v3.P_team {
 								fmt.Printf("Team ID: '%v' Role: %v \n", v4.T_id, v4.T_role)
 							}
@@ -73,7 +73,7 @@ func Unmarshal() {
 						fmt.Println("---Client Contact---")
 						fmt.Printf("Name: %v \nRole: %v \n", v.Contacts_name, v.Contacts_role)
 					}
-				 }
+				}
 			}
 		}
 
