@@ -1,0 +1,65 @@
+{
+    "company": "TechCorp",
+    "address": {
+      "street": "123 Main Street",
+      "city": "Techville",
+      "state": "Techsylvania",
+      "zipcode": "12345"
+    },
+    "departments": [
+      {
+        "name": "Engineering",
+        "head": {
+          "name": "John Doe",
+          "position": "CTO"
+        },
+        "employees": [
+          {
+            "id": 1,
+            "name": "Jane Smith",
+            "position": "Software Engineer",
+            "skills": ["JavaScript", "Python", "React"]
+          },
+          {
+            "id": 2,
+            "name": "Alex Johnson",
+            "position": "Frontend Developer",
+            "skills": ["HTML", "CSS", "JavaScript"]
+          }
+        ],
+        "projects": [
+          {
+            "projectId": "proj123",
+            "name": "E-commerce Platform",
+            "description": "Developing an online shopping platform",
+            "team": ["Jane Smith", "Alex Johnson"],
+            "status": "In Progress"
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "head": {
+          "name": "Emily Brown",
+          "position": "CMO"
+        },
+        "employees": [
+          {
+            "id": 3,
+            "name": "Michael Johnson",
+            "position": "Marketing Specialist",
+            "skills": ["Digital Marketing", "Content Creation"]
+          }
+        ],
+        "projects": [
+          {
+            "projectId": "proj456",
+            "name": "Social Media Campaign",
+            "description": "Launching a new social media campaign",
+            "team": ["Michael Johnson"],
+            "status": "Completed"
+          }
+        ]
+      }
+    ]
+  }
