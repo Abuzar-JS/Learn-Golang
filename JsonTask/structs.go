@@ -1,40 +1,40 @@
 package main
 
 type comp struct {
-	company     string    `json:"company"`
-	address     []address `json:"address"`
-	departments []address `json:"departments"`
+	Company     string    `json:"company"`
+	Address     []address `json:"address"`
+	Departments []address `json:"departments"`
 }
 
 type address struct {
-	street  string `json:"street"`
-	city    string `json:"city"`
-	state   string `json:"state"`
-	zipcode int    `json:"zipcode"`
+	Street  string `json:"street"`
+	City    string `json:"city"`
+	State   string `json:"state"`
+	Zipcode int    `json:"zipcode"`
 }
 
 type departments struct {
-	name      string      `json:"name"`
-	head      []head      `json:"head"`
-	employees []employees `json:"employees"`
-	projects  []projects  `json:"projects"`
+	D_name    string      `json:"name"`
+	Head      []head      `json:"head"`
+	Employees []employees `json:"employees"`
+	Projects  []projects  `json:"projects"`
 }
 
 type head struct {
-	name     string `json:"name"`
-	position string `json:"position"`
+	H_name     string `json:"name"`
+	H_position string `json:"position"`
 }
 type employees struct {
-	id       string   `json:"id"`
-	name     string   `json:"name"`
-	position string   `json:"position"`
-	skills   []string `json:"skills"`
+	E_id       string   `json:"id"`
+	E_name     string   `json:"name"`
+	E_position string   `json:"position"`
+	E_skills   []string `json:"skills"`
 }
 
 type projects struct {
-	projectid   string   `json:"projectId"`
-	p_name      string   `json:"name"`
-	description string   `json:"description"`
-	team        []string `json:"team"`
-	status      string   `json:"status"`
+	Projectid   string   `json:"projectId"`
+	P_name      string   `json:"name"`
+	Description string   `json:"description"`
+	Team        []string `json:"team"`
+	Status      string   `json:"status"`
 }
