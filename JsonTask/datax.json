@@ -1,4 +1,4 @@
-{
+[{
     "company": "TechCorp",
     "address": {
       "street": "123 Main Street",
@@ -62,4 +62,4 @@
         ]
       }
     ]
-  }
+  }]
