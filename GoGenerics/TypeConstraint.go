@@ -23,6 +23,7 @@ func addMyNumbers[T myNumbers](a, b T) T {
 	return a + b
 }
 
+
 func TConst() {
 	fmt.Println(addI(1, 2))
 	fmt.Println(addF(1.2, 2))
