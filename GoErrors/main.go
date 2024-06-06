@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	ErrOpenF()
+	ErrH1()
 }
