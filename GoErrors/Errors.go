@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
+	"log"
 	"os"
 	"strings"
 )
@@ -52,6 +53,28 @@ func ErrFile() {
 	}
 	defer f.Close()
 
-	r := strings.NewReader("Hey Abuzar")
+	r := strings.NewReader("Hey Abuzar1 \n")
 	io.Copy(f, r)
+
+	x := strings.NewReader("Hey Abuzar2 \n")
+	io.Copy(f, x)
+
+	z := strings.NewReader("Hey Abuzar3 \n")
+	io.Copy(f, z)
+}
+
+func ErrOpenF() {
+	f, err := os.Open("names.taxt")
+	if err != nil {
+		log.Println("Log", err)
+		fmt.Println("Log", err)
+		// fmt.Println(err)
+		return
+		defer f.Close()
+	}
+	bs, err := io.ReadAll(f)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(string(bs))
 }
