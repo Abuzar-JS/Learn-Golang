@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	ErrH1()
+	ErrH2()
 }
