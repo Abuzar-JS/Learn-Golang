@@ -19,6 +19,8 @@ func ErrH1() {
 		Sayings: []string{"Shaken, stirred", "Any last wishes?", "Never say never"},
 	}
 
+	fmt.Println(p1)
+
 	bs, err := json.Marshal(p1)
 	if err != nil {
 		log.Fatalln("Json Has Errors", err)
