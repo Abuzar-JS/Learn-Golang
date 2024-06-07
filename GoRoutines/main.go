@@ -1,10 +1,6 @@
 package main
 
-import "time"
-
 func main() {
-	go TalkwithFriend()
-	go WriteAPage()
+	HandEx3()
 
-	time.Sleep(6 * time.Second)
 }
