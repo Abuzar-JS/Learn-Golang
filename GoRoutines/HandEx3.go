@@ -12,11 +12,11 @@ func HandEx3() {
 
 	counter := 0
 
-	const gs = 10
+	const gs = 100
 	var wg sync.WaitGroup
 	wg.Add(gs)
 
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10; i++ {
 		go func() {
 			v := counter
 			// time.Sleep(time.Second)
