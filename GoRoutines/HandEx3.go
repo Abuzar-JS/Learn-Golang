@@ -17,6 +17,7 @@ func HandEx3() {
 	wg.Add(gs)
 
 	for i := 0; i < 10; i++ {
+		//GoRoutines
 		go func() {
 			v := counter
 			// time.Sleep(time.Second)
