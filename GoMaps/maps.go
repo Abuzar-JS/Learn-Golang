@@ -27,4 +27,12 @@ func Basicmain() {
 	fmt.Println(len(town))
 	fmt.Println(len(city))
 
+	mapX := map[string]int{
+		"Abuzar": 42,
+		"Razi":   54,
+		"Sqlain": 90,
+	}
+
+	fmt.Println(mapX)
+	fmt.Println(len(mapX))
 }

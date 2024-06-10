@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	// Basicmain()
+	Basicmain()
 	// Rangemap()
 	// DelMap()
 	// cbooks()
