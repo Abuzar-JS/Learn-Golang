@@ -2,16 +2,16 @@ package main
 
 import "fmt"
 
-func AddtoChannel(a, b int) int {
-	return a + b
-}
-
 func Cha() {
-	ch := make(chan int)
-	fmt.Println("Hello ")
+	c := make(chan int, 4)
+	c <- 42
+	c <- 56
+	c <- 20
+	c <- 98
 
-	ch <- 3
-	//fmt.Println(<-firstchn)
-	go fmt.Println(AddtoChannel(6, 2))
+	fmt.Print("\n", <-c)
+	fmt.Print("\n", <-c)
+	fmt.Print("\n", <-c)
+	fmt.Print("\n", <-c)
 
 }
