@@ -49,3 +49,24 @@ func ReceiveOnlyChannel() {
 	fmt.Println(<-c)
 
 }
+
+func ExperimentChannel() {
+	c := make(chan int)
+
+	//send
+	go foo(c)
+
+	// receive
+	go bar(c)
+
+	fmt.Println("About to Exit")
+}
+func foo(c chan<- int) {
+	for i := 0; i < 100; i++ {
+		c <- 42
+	}
+
+} //Send
+func bar(c <-chan int) {
+	fmt.Println(<-c)
+} //receive
