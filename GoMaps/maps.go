@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func Basicmain() {
 	city := map[string]int{
@@ -35,4 +37,6 @@ func Basicmain() {
 
 	fmt.Println(mapX)
 	fmt.Println(len(mapX))
+	fmt.Println(mapX)
+
 }
