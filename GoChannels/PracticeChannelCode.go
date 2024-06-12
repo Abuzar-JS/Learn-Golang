@@ -25,7 +25,7 @@ func worker(id int, jobs <-chan Job, results chan<- Result, wg *sync.WaitGroup) 
 	defer wg.Done()
 	for job := range jobs {
 		// Simulate processing time
-		time.Sleep(time.Millisecond * time.Duration(rand.Intn(100)))
+		time.Sleep(time.Millisecond * time.Duration(rand.Intn(10000)))
 		output := job.Value * 2 // Simple processing: double the value
 		results <- Result{JobID: job.ID, Output: output, WorkerID: id}
 	}
@@ -38,7 +38,9 @@ func dispatcher(numWorkers int, jobs <-chan Job, results chan<- Result) {
 		wg.Add(1)
 		go worker(i, jobs, results, &wg)
 	}
+
 	wg.Wait()
+
 	close(results)
 }
 
