@@ -23,6 +23,7 @@ func DirectionalChannels() {
 	cr := make(<-chan int) //Receive Only Channel
 	cs := make(chan<- int) // Send Only Channel
 
+	//Printing Type
 	fmt.Println("---------Start---------")
 	fmt.Printf("c\t%T\n", c)
 	fmt.Printf("cr\t%T\n", cr)
