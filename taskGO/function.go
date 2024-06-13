@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
+// FunctionX is exported to main.go
 func FunctionX() {
-
+	//Function Body
 	fmt.Println("Welcome To Tech Solutions Inc")
 
 	var option int
@@ -18,34 +19,34 @@ func FunctionX() {
 
 	p1 := Employees{
 
-		e_id:        1,
+		eID:         1,
 		name:        "John Doe",
 		departments: "Engineering",
 		skills:      []string{"Pyhton", "Javascript", "Machine Learning"},
 		projects: []Projects{{
-			name_p:   "Project X",
+			nameP:    "Project X",
 			duration: 6,
 			team: []Team{{
-				t_id: 1,
+				tID:  1,
 				role: "Lead Developer",
 			},
 				{
-					t_id: 2,
+					tID:  2,
 					role: "Data Scientist",
 				},
 				{
-					t_id: 3,
+					tID:  3,
 					role: "UX Designer",
 				},
 			},
 		}, {
-			name_p:   "Project Y",
+			nameP:    "Project Y",
 			duration: 9,
 			team: []Team{{
-				t_id: 4,
+				tID:  4,
 				role: "Senior Developer",
 			}, {
-				t_id: 5,
+				tID:  5,
 				role: "Database Admin",
 			}},
 		},
@@ -53,17 +54,17 @@ func FunctionX() {
 	}
 
 	p2 := Employees{
-		e_id:        2,
+		eID:         2,
 		name:        "Jane Smith",
 		departments: "Marketing",
 		skills:      []string{"Digital Marketing", "Content Creation", "SEO"},
 		projects: []Projects{{
-			name_p:   "Campaign A",
+			nameP:    "Campaign A",
 			duration: 4,
 			team: []Team{{
-				t_id: 5,
+				tID:  5,
 				role: "Marketing Manager"}, {
-				t_id: 6,
+				tID:  6,
 				role: "Content Writer",
 			},
 			},
@@ -72,29 +73,29 @@ func FunctionX() {
 	}
 
 	c1 := Clients{
-		c_id:     1,
+		cID:      1,
 		name:     "ABC Corporation",
 		industry: "Finance",
 		contact: []Contact{{
-			c_name: "Alice Johnson",
-			c_role: "CTO",
+			cName: "Alice Johnson",
+			cRole: "CTO",
 		}, {
-			c_name: "Bob Williams",
-			c_role: "CFO",
+			cName: "Bob Williams",
+			cRole: "CFO",
 		},
 		},
 	}
 
 	c2 := Clients{
-		c_id:     2,
+		cID:      2,
 		name:     "XYZ Enterprises",
 		industry: "Retail",
 		contact: []Contact{{
-			c_name: "Emily Davis",
-			c_role: "Marketing Director",
+			cName: "Emily Davis",
+			cRole: "Marketing Director",
 		}, {
-			c_name: "Jack Brown",
-			c_role: "CEO",
+			cName: "Jack Brown",
+			cRole: "CEO",
 		}},
 	}
 
@@ -110,24 +111,24 @@ func FunctionX() {
 		fmt.Scanf("%d", &option2)
 		if option2 == 1 {
 
-			fmt.Println("ID: ", c1.c_id)
+			fmt.Println("ID: ", c1.cID)
 			fmt.Println("Company Name ", c1.name)
 			fmt.Println("Industry: ", c1.industry)
 
 			for _, v := range c1.contact {
 				fmt.Println("---------")
-				fmt.Println("Client Name: ", v.c_name)
-				fmt.Println("Role: ", v.c_role)
+				fmt.Println("Client Name: ", v.cName)
+				fmt.Println("Role: ", v.cRole)
 			}
 		} else if option2 == 2 {
-			fmt.Println("ID: ", c2.c_id)
+			fmt.Println("ID: ", c2.cID)
 			fmt.Println("Company Name ", c2.name)
 			fmt.Println("Industry: ", c2.industry)
 
 			for _, v := range c2.contact {
 				fmt.Println("---------")
-				fmt.Println("Client Name: ", v.c_name)
-				fmt.Println("Role: ", v.c_role)
+				fmt.Println("Client Name: ", v.cName)
+				fmt.Println("Role: ", v.cRole)
 			}
 		}
 
@@ -142,7 +143,7 @@ func FunctionX() {
 
 		fmt.Scanf("%d", &option3)
 		if option3 == 1 {
-			fmt.Println("ID: ", p1.e_id)
+			fmt.Println("ID: ", p1.eID)
 			fmt.Println("Name ", p1.name)
 			fmt.Println("Department: ", p1.departments)
 			for _, v := range p1.skills {
@@ -151,17 +152,17 @@ func FunctionX() {
 
 			for _, v := range p1.projects {
 				fmt.Println("---------")
-				fmt.Println("Project name: ", v.name_p)
+				fmt.Println("Project name: ", v.nameP)
 				fmt.Println("Project Duration: ", v.duration)
 				for _, v2 := range v.team {
 					fmt.Println("---------")
-					fmt.Println("Team ID: ", v2.t_id)
+					fmt.Println("Team ID: ", v2.tID)
 					fmt.Println("Team Role: ", v2.role)
 
 				}
 			}
 		} else if option3 == 2 {
-			fmt.Println("ID: ", p2.e_id)
+			fmt.Println("ID: ", p2.eID)
 			fmt.Println("Name ", p2.name)
 			fmt.Println("Department: ", p2.departments)
 			for _, v := range p2.skills {
@@ -170,11 +171,11 @@ func FunctionX() {
 
 			for _, v := range p2.projects {
 				fmt.Println("---------")
-				fmt.Println("Project name: ", v.name_p)
+				fmt.Println("Project name: ", v.nameP)
 				fmt.Println("Project Duration: ", v.duration)
 				for _, v2 := range v.team {
 					fmt.Println("---------")
-					fmt.Println("Team ID: ", v2.t_id)
+					fmt.Println("Team ID: ", v2.tID)
 					fmt.Println("Team Role: ", v2.role)
 
 				}

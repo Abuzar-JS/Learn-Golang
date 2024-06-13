@@ -1,32 +1,37 @@
 package main
 
+// Employees is exported to functions.go file
 type Employees struct {
-	e_id        int
+	eID         int
 	name        string
 	departments string
 	skills      []string
 	projects    []Projects
 }
 
+// Projects is exported to functions.go file
 type Projects struct {
-	name_p   string
+	nameP    string
 	duration int
 	team     []Team
 }
 
+// Team is exported to functions.go file
 type Team struct {
-	t_id int
+	tID  int
 	role string
 }
 
+// Clients is exported to functions.go file
 type Clients struct {
-	c_id     int
+	cID      int
 	name     string
 	industry string
 	contact  []Contact
 }
 
+// Contact is exported to functions.go file
 type Contact struct {
-	c_name string
-	c_role string
+	cName string
+	cRole string
 }
