@@ -16,6 +16,7 @@ type MockDatastore struct {
 	Users map[int]User
 }
 
+// GetUser used
 func (md MockDatastore) GetUser(id int) (User, error) {
 	user, ok := md.Users[id]
 	if !ok {
@@ -24,6 +25,7 @@ func (md MockDatastore) GetUser(id int) (User, error) {
 	return user, nil
 }
 
+// SaveUser used
 func (md MockDatastore) SaveUser(u User) error {
 	_, ok := md.Users[u.ID]
 	if ok {
@@ -54,15 +56,18 @@ type Service struct {
 	ds Datastore
 }
 
+// GetUser exported
 func (s Service) GetUser(id int) (User, error) {
 	return s.ds.GetUser(id)
 }
 
+// SaveUser Used
 func (s Service) SaveUser(u User) error {
 	return s.ds.SaveUser(u)
 }
 
-func MainX() {
+// X exported to main.go
+func X() {
 	db := MockDatastore{
 		Users: make(map[int]User),
 	}

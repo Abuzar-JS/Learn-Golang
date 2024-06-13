@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// E58 exported to main.go
 func E58() {
 
 	a := foo()

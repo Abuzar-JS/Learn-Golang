@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// E59 exported to main.go
 func E59() {
 
 	xi := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}

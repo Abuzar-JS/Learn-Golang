@@ -5,11 +5,13 @@ import (
 	"time"
 )
 
+// E73 exported
 func E73() {
 	timeFunc(DoWork)
 
 }
 
+// DoWork exported
 func DoWork() {
 	for i := 0; i < 3_000; i++ {
 		fmt.Println(i)

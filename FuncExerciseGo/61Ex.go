@@ -11,6 +11,7 @@ func (p person) speak() {
 	fmt.Printf("My name is %v and age is %v", p.first, p.age)
 }
 
+// E61 exported to main.go
 func E61() {
 	p1 := person{
 		first: "Ali",

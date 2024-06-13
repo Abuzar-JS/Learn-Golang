@@ -13,6 +13,7 @@ func powinator(a float64) func() float64 {
 	}
 }
 
+// E72 exported
 func E72() {
 	x := powinator(2)
 	fmt.Println(x())

@@ -30,6 +30,7 @@ func info(s shape) float64 {
 	return s.area()
 }
 
+// E62 exported to main.go
 func E62() {
 	c1 := circle{
 		radius: 4,

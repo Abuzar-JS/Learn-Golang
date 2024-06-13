@@ -37,20 +37,20 @@ package main
 
 import "fmt"
 
-
+//CostCalculator exported to main
 func CostCalculator(mealCost float64, taxRate float64, tipRate float64, numPeople int) float64 {
 	taxAmount := mealCost * (taxRate / 100)
 
 	tipAmount := mealCost * (tipRate / 100)
-	
+
 	totalCost := mealCost + taxAmount + tipAmount
-	
+
 	costPerPerson := totalCost / float64(numPeople)
-	
+
 	return costPerPerson
 }
 
-
+//CostExe exported to main
 func CostExe() {
 
 	var mealCost, tipRate, taxRate float64
