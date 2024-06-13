@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// Powinator func
 func powinator(a float64) func() float64 {
 	var c float64
 	return func() float64 {
