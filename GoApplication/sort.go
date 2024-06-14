@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// SortGo is exported to main.go
 func SortGo() {
 
 	xi := []int{1, 5, 477, 34, 98, 32, 6, 332, 986, 2132, 54, 76, 798, 23}

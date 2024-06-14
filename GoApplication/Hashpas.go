@@ -6,6 +6,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
+// HasP is exported to main.go
 func HasP() {
 	s := "12345pass"
 	bs, err := bcrypt.GenerateFromPassword([]byte(s), bcrypt.MinCost)

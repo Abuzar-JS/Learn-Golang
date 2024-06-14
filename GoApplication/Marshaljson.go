@@ -14,11 +14,12 @@ type student struct {
 }
 
 type teacher struct {
-	Id      int
+	ID      int
 	Name    string
 	Subject string
 }
 
+// MarshalJ is exported to main.go
 func MarshalJ() {
 
 	s1 := student{
@@ -26,7 +27,7 @@ func MarshalJ() {
 		Age:    10,
 		Class:  "2b",
 		School: "The Educators",
-		Teacher: []teacher{{Id: 1,
+		Teacher: []teacher{{ID: 1,
 			Name:    "Sir Awais",
 			Subject: "English"},
 		}}
@@ -36,7 +37,7 @@ func MarshalJ() {
 		Age:    12,
 		Class:  "4C",
 		School: "The Marshal Boys High School",
-		Teacher: []teacher{{Id: 3,
+		Teacher: []teacher{{ID: 3,
 			Name:    "Sir Shakir",
 			Subject: "Chemistry"}}}
 
