@@ -22,5 +22,3 @@ func CalculateCost(carsCount int) uint {
 	cost := (groupOfTen*95000 + remainders*10000)
 	return uint(cost)
 }
-
-fmt.Prin
