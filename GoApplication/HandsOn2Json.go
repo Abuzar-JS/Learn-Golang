@@ -27,7 +27,7 @@ func Hands2() {
 	if err != nil {
 		return
 	}
-
+	//UnMarshal Json
 	var fil []person
 	err = json.Unmarshal(s, &fil)
 	if err != nil {
