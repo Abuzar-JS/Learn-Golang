@@ -19,7 +19,7 @@ func NewCar(speed, batteryDrain int) Car {
 	}
 }
 
-func main() {
+func mainCar() {
 	NewCar(23, 98)
 	fmt.Println(NewCar(23, 98))
 }
