@@ -44,6 +44,6 @@ func Scrabbles(word string) int {
 	return i
 
 }
-func main() {
+func mainX() {
 	Scrabbles("cabbage")
 }
