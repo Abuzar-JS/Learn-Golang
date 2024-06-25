@@ -9,14 +9,4 @@ func Reverse(input string) string {
 	}
 
 	return string(reverse)
-	//var test string
-	//
-	//for i := len(input) - 1; i >= 0; i-- {
-	//	test = test + string(input[i])
-	//
-	//}
-	//
-	//fmt.Println(test)
-	//
-	//return test
 }

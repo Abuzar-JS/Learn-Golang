@@ -1,6 +1,6 @@
 package main
 
 func main() {
-	Reverse("Hello, 世界")
-
+	//LargestSeriesProduct("54950", 3)
+	mainZ()
 }
