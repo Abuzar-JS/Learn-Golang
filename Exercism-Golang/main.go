@@ -2,6 +2,8 @@ package main
 
 func main() {
 
-	LargestSeriesProduct("63915", 3)
+	for i := 3; i <= 100; i++ {
+		Factors(i)
+	}
 
 }
