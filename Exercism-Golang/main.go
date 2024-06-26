@@ -1,6 +1,7 @@
 package main
 
 func main() {
-	//LargestSeriesProduct("54950", 3)
-	mainZ()
+
+	LargestSeriesProduct("63915", 3)
+
 }
