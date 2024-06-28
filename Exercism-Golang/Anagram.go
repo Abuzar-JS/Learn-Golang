@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
@@ -24,25 +23,8 @@ func Detect(subject string, candidates []string) []string {
 		candidates[i] = strings.ToLower(candidates[i])
 		if SortString(subject) == SortString(candidates[i]) && subject != candidates[i] {
 			list = append(list, candi)
-			fmt.Println(list)
 
 		}
 	}
-	fmt.Println(list)
 	return list
 }
-
-//func Detect(subject string, candidates []string) {
-//	subject = strings.ToLower(subject)
-//	subject = SortString(subject)
-//	fmt.Println("Subject Sorted:", subject)
-//	for i, candi := range candidates {
-//		candi = strings.ToLower(candi)
-//		candi = SortString(candi)
-//		fmt.Println("Sorted Candidates: ", i, candi)
-//		if subject == candi {
-//			fmt.Println("Found Candidate:", i, candi)
-//		}
-//	}
-//
-//}
