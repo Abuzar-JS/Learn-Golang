@@ -18,7 +18,6 @@ type Score struct {
 var Team map[string]Score
 
 func mainData() {
-
 	Team = make(map[string]Score)
 	file, err := os.Open("ReadFile.txt")
 	if err != nil {
@@ -34,77 +33,48 @@ func mainData() {
 
 		details := strings.Split(line, ";")
 
-		team1 := details[0] // D
-		team2 := details[1] // A
-		status := details[2]
+		team1, team2, status := details[0], details[1], details[2]
 
-		if _, exists := Team[team1]; !exists {
-			Team[team1] = GetStatus(status)
-		} else {
-			Team[team1] = UpdateScore(team1, status)
-		}
-
-		if _, exists := Team[team2]; !exists {
-			if status == "win" {
-				status = "loss"
-			} else if status == "loss" {
-				status = "win"
-			}
-			Team[team2] = GetStatus(status)
-		} else {
-			if status == "win" {
-				status = "loss"
-			} else if status == "loss" {
-				status = "win"
-			}
-			Team[team2] = UpdateScore(team2, status)
-		}
+		UpdateScore(team1, status)
+		UpdateScore(team2, reverseStatus(status))
 
 	}
-	for team, score := range Team {
-		fmt.Printf("%-30s | %-3d | %-3d | %-3d | %-3d | %-3d\n", team, score.MP, score.W, score.D, score.L, score.P)
-	}
-}
+	printScores()
 
-func GetStatus(status string) Score {
-
-	p1 := Score{
-		MP: 0,
-		W:  0,
-		D:  0,
-		L:  0,
-		P:  0,
-	}
-	p1.MP = 1
-	if status == "win" {
-		p1.W = 1
-		p1.P = 3
-	} else if status == "loss" {
-		p1.L = 1
-	} else {
-		p1.D = 1
-		p1.P = 1
-	}
-
-	return p1
 }
 
 func UpdateScore(team, status string) Score {
-	p1 := Team[team]
-
-	p1.MP += 1
-
-	if status == "win" {
-		p1.W += 1
-		p1.P += 3
-	} else if status == "loss" {
-		p1.L += 1
-	} else if status == "draw" {
-		p1.D += 1
-		p1.P += 1
-	} else {
-		fmt.Println("Invalid Status")
+	s := Team[team]
+	s.MP++
+	switch status {
+	case "win":
+		s.W++
+		s.P += 3
+	case "loss":
+		s.L++
+	case "draw":
+		s.D++
+		s.P++
+	default:
+		fmt.Println("Invalid status")
 	}
+	return s
+}
 
-	return p1
+func reverseStatus(status string) string {
+	switch status {
+	case "win":
+		return "loss"
+	case "loss":
+		return "win"
+	default:
+		return status
+	}
+}
+
+func printScores() {
+	fmt.Printf("%-30s | %-3s | %-3s | %-3s | %-3s | %-3s\n", "Team", "MP", "W", "D", "L", "P")
+	for team, score := range Team {
+		fmt.Printf("%-30s | %-3d | %-3d | %-3d | %-3d | %-3d\n", team, score.MP, score.W, score.D, score.L, score.P)
+	}
 }
