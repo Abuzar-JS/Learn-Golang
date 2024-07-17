@@ -10,6 +10,11 @@ func E57() {
 
 }
 
+func ello() {
+	fmt.Println("hello")
+	const a = 9
+}
+
 func sum(ii []int) int {
 	t := 0
 	for _, v := range ii {
