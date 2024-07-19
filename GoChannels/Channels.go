@@ -32,7 +32,7 @@ func DirectionalChannels() {
 
 }
 
-// Send Only Channel
+//Send Only Channel
 
 func SendOnlyChannel() {
 	// Send Only Channel can
